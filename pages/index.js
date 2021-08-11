@@ -6,7 +6,7 @@ const Index = ({ notes }) => {
 	return (
 		<div className="notes-container">
 			<h1>Notes</h1>
-			{/* <div className="grid wrapper">
+			<div className="grid wrapper">
 				{notes.map((note) => {
 					return (
 						<div key={note._id}>
@@ -30,16 +30,16 @@ const Index = ({ notes }) => {
 						</div>
 					);
 				})}
-			</div> */}
+			</div>
 		</div>
 	);
 };
 
-// Index.getInitialProps = async () => {
-// 	const res = await fetch("http://localhost:3000/api/notes");
-// 	const { data } = await res.json();
+Index.getInitialProps = async () => {
+	const res = await fetch("http://localhost:3000/api/notes");
+	const { data } = await res.json();
 
-// 	return { notes: data };
-// };
+	return { notes: data };
+};
 
 export default Index;
