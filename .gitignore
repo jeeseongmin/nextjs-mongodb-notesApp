@@ -36,5 +36,5 @@ yarn-error.log*
 .vercel
 
 # mongodb
-# next.config.js
+next.config.js
 
